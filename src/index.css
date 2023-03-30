@@ -20,3 +20,54 @@ code {
 #clear-canvas {
 	width: 150px;
 }
+
+#test-dock-cont {
+	height: calc(100% - 20px);
+	margin: 10px;
+}
+
+#dock-card-forms {
+	filter: none;
+	border: 1px solid #ccc;
+	height: 90vh;
+}
+
+#dock-card-forms>.card-menubar>.card-title {
+	position: relative;
+	text-align: left;
+	width: 50%;
+	color:rgb(32, 32, 32);
+}
+
+#dock-card-forms-card-content {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	gap: 10px;
+}
+
+#dock-card-forms>.card-menubar {
+	background-color: transparent;
+	border-bottom: 1px solid #ccc;
+}
+
+.dock-form-card {
+	border: 1px solid #f3f3f3;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.dock-form-card>.paragraph-cont {
+	padding: 10px;
+}
+
+.dock-form-card-controls>.action-button {
+	width: 100%;
+}
+
+.dock-form-card-controls {
+	background-color: #f3f3f3;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 20px;
+}

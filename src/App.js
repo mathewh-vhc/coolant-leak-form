@@ -10,13 +10,13 @@ import { CoolantLeakForm } from './Forms/CoolantLeak/CoolantLeakForm';
  */
 var configdefault = {
 	tb:{
-		active:false
+		active:true
 	},
 	user:{
 		active:true
 	},
 	dock:{
-		active:false
+		active:true
 	},
 	settings:{
 		dev:true

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { TextButton } from 'vhp-component-library';
+import { TestFormDock } from './Components/VHP/TestFormDock';
 
 class Dock extends Component {
     constructor(props) {
@@ -35,7 +36,7 @@ export class DockApp extends Component {
         this.state = {
             active: true,
             Apps:[
-				<div>Application!</div>,
+				<TestFormDock/>,
             ]
         }
         

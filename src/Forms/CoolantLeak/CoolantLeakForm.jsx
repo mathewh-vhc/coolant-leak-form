@@ -75,6 +75,8 @@ export class CoolantLeakForm extends Component {
 			date:this.state.date,
 			signature:img
 		}
+
+		//Save to API
 	}
 
     render() {

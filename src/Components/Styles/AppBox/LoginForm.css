@@ -1,0 +1,99 @@
+#login-box{
+    position: absolute;
+    max-width: 40vw;
+    min-width: 40vw;
+    min-height: 70vh;
+    max-height: 70vh;
+    left: 30vw;
+    right: 30vw;
+    top: 15vh;
+    bottom: 15vh;
+    align-content: center;
+}
+#login-info{
+    padding: 5px;
+    display: grid;
+    row-gap: 10px;
+    justify-items: center;
+    height: 52.5vh;
+}
+#login-cont {
+    display: grid;
+    padding: 25px;
+    gap: 25px;
+    height: 15vh;
+    position: absolute;
+    bottom: 250px;
+}
+#login-form {
+    display: grid;
+    row-gap: 20px;
+}
+#login-form>.form-info-item {
+    display: flex;
+    gap: 25px;
+    height: 30px;
+}
+#login-form>.form-info-item>div {
+    font-weight: 550;
+    text-align: left;
+    line-height: 30px;
+}
+
+#login-form>.form-info-item>input {
+    height: 30px;
+}
+
+.login-logo {
+    position: relative;
+    top:10px;
+    height: 5rem;
+    width: 5rem;
+}
+
+.action-button.login-submit {
+    position: absolute;
+    bottom: 30px;
+    border-radius: 5px;
+    width: 10em;
+    height: 3em;
+    line-height: 3em;
+    font-weight: 700;
+    background-color: var(--basic-button-bg);
+    color: var(--basic-button-color);
+    filter: var(--drop-shadow)
+}
+
+.action-button.login-submit:hover {
+    background-color: var(--basic-button-border);
+    color: var(--basic-button-hover-text)
+}
+
+.login-username {
+    text-transform: uppercase;
+}
+
+/*Warning text*/
+#login-failed-text {
+    color: rgba(0,0,0,0);
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#login-failed-text.true{
+    color:rgb(165, 61, 61);
+}
+
+@media screen and (max-width: 767px) {
+	#login-box {
+		min-height: 50vh;
+		max-height: 50vh;
+		min-width: 70vw;
+		max-width: 70vw;
+		left: 15vw;
+		right: 15vw;
+		top: 20vh;
+		bottom: 20vh;
+	}
+}

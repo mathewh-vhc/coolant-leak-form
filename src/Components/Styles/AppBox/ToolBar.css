@@ -1,0 +1,132 @@
+#titlebar-cont{
+    position: sticky;
+    top: 0;
+    display:flex;
+    justify-content: space-between;
+    flex-flow: row;
+    background-color: var(--titlebar-bg);
+    width: 100%;
+    height: 40px;
+    z-index: 200;
+    transition: top 0.3s;
+    filter: var(--drop-shadow);
+}
+#titlebar-cont-left{
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+#titlebar-cont-right{
+    height: 100%;
+}
+#titlebar-moretools-quick{
+    position: absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:100px;
+    top:40px;
+    background-color: var(--titlebar-bg);
+    border-bottom-right-radius: 5px;
+}
+#titlebar-title{
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    -webkit-app-region:drag;
+}
+
+.titlebar-button-action{
+    height: 100%;
+}
+
+#user-form-button, #titlebar-button-more {
+    width: 40px;
+    padding: 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    filter: none;
+}
+#titlebar-moretools-quick>.titlebar-button-action{
+  height:unset;
+  width:30px;
+  display: flex;
+  flex-direction:column;
+  margin: 10px;
+  padding:0;
+}
+[class*="titlebar-button-"]{
+    padding: 5px 10px;
+}
+[class*="titlebar-button-"]:hover{
+    cursor: pointer;
+    filter: invert();
+}
+.moretools-spacer:hover{
+    cursor: unset;
+    filter: invert();
+}
+#titlebar-button-home{
+    filter: none;
+    width:30px;
+    height: 30px;
+    background-color: transparent;
+}
+#titlebar-button-home:hover{
+    filter: none;
+}
+
+.titlebar-button-view{
+    height: 100%;
+}
+
+.titlebar-button-moretools{
+    display: flex;
+    flex-direction:column;
+    margin: 10px;
+    padding:0;
+}
+#titlebar-win-close{
+    padding: 5px 10px;
+}
+#titlebar-win-close:hover{
+    background-color: cyan;
+    filter: invert();
+}
+
+
+
+/* User Name */
+#titlebar-page-user-cont{
+    position: relative;
+}
+#titlebar-username{
+    position: absolute;
+    bottom: 5px;
+    left: 35px;
+    display: none;
+    color:var(--text-dark);
+}
+#titlebar-page-user:hover+#titlebar-username{
+    display: block;
+}
+.login-action-button {
+    border-radius: 5px;
+    filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.5));
+    width: 5em;
+    height: 2em;
+    line-height: 2em;
+}
+#gotovapi-button{
+  width:40px;
+}
+.action-buttons-div {
+    display: flex;
+    column-gap: 5%;
+}
+
+@media print{
+    #titlebar-cont{display:none;}
+}

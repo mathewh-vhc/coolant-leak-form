@@ -1,0 +1,8 @@
+.header-text {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.array-header {
+    display: flex;
+}

@@ -1,0 +1,42 @@
+/*Default styles for buttons*/
+.action-button {
+    background-color: #a23b3d;
+    color:#fff;
+    height: 30px;
+    line-height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: drop-shadow(0.5px 1px 1.75px #999999);
+}
+  
+.action-button:hover {
+    background-color: #c94a4c;
+    color:#fff;
+}
+  
+.action-button>img {
+    height: 30px;
+    width: 30px;
+    pointer-events: none;
+}
+
+/*Action row default styling*/
+.action-row {
+    display: flex;
+    flex-grow: initial;
+    justify-content: end;
+    gap: 10px
+}
+
+.action-row.center {
+    justify-content: center;
+}
+
+.action-row.left {
+    justify-content: start
+}
+
+.action-row.right {
+    justify-content: end
+}

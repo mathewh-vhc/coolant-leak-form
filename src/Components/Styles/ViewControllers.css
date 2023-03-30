@@ -1,0 +1,118 @@
+.bottom-bar {
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+}
+
+.top-bar {
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top: 40px;
+}
+
+.top-right-bar {
+    display: grid;
+    direction: ltr;
+    float: right;
+    width: 50vw;
+    grid-template-columns: 50% 50%;
+    filter: var(--drop-shadow)
+}
+.top-right-bar>:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+.top-left-bar {
+    display: grid;
+    direction: ltr;
+    float: left;
+    grid-template-columns: 100%;
+}
+
+.menu-button {
+    width: 100%;
+    background-color: rgb(12, 86, 149);
+    color:var(--card-base-light);
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.menu-button.selected {
+    background-color: rgb(16, 59, 97);
+}
+
+.menu-button:hover {
+    background-color: rgb(16, 59, 97);
+    cursor: pointer;
+}
+
+/*Side bar customizations: default state*/
+.action-button.side-bar-menu {
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 35px;
+    height: 35px;
+    filter:none;
+}
+.action-button.side-bar-menu:hover {
+    background-color: #ededed;
+}
+.action-button.side-bar-menu>img {
+    height: 15px;
+    width: 15px;
+    margin-top: 10px;
+}
+
+.side-bar {
+    position: absolute;
+    top:90px;
+    height: calc(90vh);
+    width: 150px;
+    display: block;
+    margin-left: 10px;
+}
+
+.side-bar>.menu-button {
+    background-color: transparent;
+    color: rgb(30, 30, 30);
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.side-bar>.menu-button:hover {
+    background-color: #ededed;
+}
+
+.side-bar>.menu-button.selected {
+    background-color: #ededed;
+}
+
+.side-bar>.menu-button>img {
+    margin-top: 5px;
+    margin-left: 7.5px;
+    width: 20px;
+    height: 20px;
+}
+
+.side-bar>.menu-button>div {
+    font-size: 17.5px;
+    margin-left: 5px;
+}
+
+/*Side bar collapsed state*/
+.side-bar.collapsed {
+    width: 35px;
+}
+
+.side-bar.collapsed>.menu-button {
+    color: rgba(0, 0, 0, 0);
+}

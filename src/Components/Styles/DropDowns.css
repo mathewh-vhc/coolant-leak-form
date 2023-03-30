@@ -1,0 +1,84 @@
+/*Customization for dropdowns*/
+.dropdown-option {
+    padding: 5px;
+    cursor: pointer;
+}
+.dropdown-arrow {
+    width: 10px;
+    position: absolute;
+    right: 7.5%;
+    bottom:25%;
+}
+
+.dropdown-arrow:hover {
+    filter: invert();
+}
+
+.dropdown-clear {
+    width: 20px;
+    position: absolute;
+    right: 16.5%;
+    bottom:0px;
+    height: 100%;
+    background-color: transparent;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    filter: none;
+}
+
+.dropdown-clear:hover {
+    background-color: transparent;
+    filter: invert();
+}
+
+.dropdown-clear>img {
+    height: 10px;
+    width: 10px;
+}
+
+.dropdown-option:hover {
+    background-color: rgb(141, 62, 62);
+}
+.dropdown-option.selected.default {
+    color: rgb(120,120,120)
+}
+
+.dropdown-option.selected {
+    background-color: var(--card-base-light);
+    outline: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    color: rgb(0,0,0);
+	width:100%;
+}
+
+.dropdown-cont {
+	width: 150px;
+	top:0;
+	position: relative;
+}
+
+.dropdown-option:hover {
+    background-color: #ccc;
+}
+
+.dropdown-list {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: var(--card-base-light);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #ccc;
+    position: absolute;
+    margin-left: 0;
+    max-height: 30vh;
+    overflow: scroll;
+    z-index: 40;
+	width: 100%;
+}
+
+.dropdown-list>.search-bar {
+    width: 90%;
+	margin-left: 5%;
+}

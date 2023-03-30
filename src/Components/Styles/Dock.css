@@ -1,0 +1,26 @@
+/*Dock*/
+.dock {
+    height: calc(100vh - 40px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+  
+.dock-app-button {
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    color:#282c34;
+    line-height: 200px;
+    font-weight: 600;
+    cursor: pointer;
+    filter: none;
+}
+
+.dock-app-button:hover {
+    background-color: #ececec;
+    color:#282c34;
+}

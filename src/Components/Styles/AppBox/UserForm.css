@@ -1,0 +1,148 @@
+/*Styling for user form*/
+.user-info-item {
+    display: flex;
+    gap: 5px;
+}
+
+#personal-info-contents>.form-info-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+#user-info-card {
+    width: 60vw;
+    min-height: fit-content;
+}
+
+#personal-info-contents>.form-info-item {
+    justify-content: start !important;
+}
+
+#user-card-content {
+    display: grid;
+    row-gap: 10px;
+}
+
+#user-fullname {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 800;
+}
+#user-username #user-usertitle {
+    text-align: left;
+    font-size: 15px;
+}
+
+#user-usertitle {
+    font-weight: 700;
+}
+
+#job-info, #personal-info {
+    padding: 0px !important;
+    border: 2px solid var(--titlebar-bg);
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+}
+
+#job-info-contents>.form-info-item, #personal-info-contents>.form-info-item {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+#personal-info-contents>.form-info-item>.text-area {
+    grid-column: unset;
+    min-height: 5vh;
+    max-height: 5vh;
+    max-width: 30vw;
+    min-width: 30vw;
+}
+
+#personal-info-contents>.form-info-item>input {
+    width: 200px;
+}
+
+#personal-info>.card-menubar, #job-info>.card-menubar {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.job-card-title>div, .personal-card-title>div {
+    position: relative;
+}
+
+#job-info-contents>label, #personal-info-contents>label {
+    margin: 10px;
+}
+
+.text-area.user-info-form {
+    width: 80%;
+    height: 20%;
+}
+
+#user-info-save, #user-logout {
+    width: fit-content;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--included-border);
+}
+
+#user-info-save:hover {
+    background-color: var(--included-border-hover);
+    cursor: pointer;
+}
+
+#user-logout {
+    background-color: rgb(50, 64, 191);
+    justify-self: center;
+}
+
+#user-logout:hover {
+    cursor: pointer;
+    background-color: rgb(30, 37, 104);
+}
+
+#user-info-confirm-close, #user-info-confirm-logout {
+    min-width: 20vw;
+    min-height: 10vh;
+    display: grid;
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+#user-info-confirm-close>.card-content>div, #user-info-confirm-logout>.card-content>div {
+    display: flex;
+    gap:10px;
+    padding: 5px;
+    justify-content: center;
+}
+
+#user-info-confirm-close>.card-content>div>.action-button, #user-info-confirm-logout>.card-content>div>.action-button {
+    height: 50px;
+    width: 120px;
+    line-height: 15px;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    justify-content: center;
+    max-lines: 2;
+    background-color: var(--included-border)
+}
+
+#user-info-confirm-close>.card-content>div>.action-button:hover, #user-info-confirm-logout>.card-content>div>.action-button:hover {
+    background-color: var(--included-border-hover);
+    cursor: pointer;
+}
+
+/*Red button for close without save*/
+#user-info-confirm-close>.card-content>div>#close-no-save {
+    background-color: var(--excluded-border);
+}
+#user-info-confirm-close>.card-content>div>#close-no-save:hover {
+    background-color: var(--excluded-border-hover);
+    cursor: pointer;
+}

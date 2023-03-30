@@ -1,0 +1,57 @@
+.section-header {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.section-card {
+    background-color: #fff;
+    width: 97.5%;
+    height: 100px;
+    gap: 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 70% 20% 20%;
+}
+
+.section-card>.action-row {
+    align-items: center;
+}
+
+.section-info {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    margin-left: 2vw;
+}
+
+.section-info-title {
+    font-size: 30px;
+    font-weight: 550;
+    text-align: left;
+    line-height: 80px;
+}
+
+.section-info-descr {
+    font-style: italic;
+    text-align: left;
+}
+
+
+.section-list {
+    display: grid;
+    gap:25px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-header {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}

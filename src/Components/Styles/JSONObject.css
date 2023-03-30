@@ -1,0 +1,47 @@
+.JSON-card {
+    max-width: 80vw;
+}
+
+.JSON-edit-card {
+    max-width: 50vw;
+    min-width: 50vw;
+    max-height: 60vh;
+    min-height: 60vh;
+}
+
+.JSON-edit-card>div>.action-row {
+    position: absolute;
+    bottom: 10px;
+}
+
+.JSON-edit-form {
+    overflow: scroll;
+    height: 47.5vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.JSON-edit-form>.form-info-item {
+    height: 40px;
+}
+
+.jsonrow {
+    grid-template-columns: 5% 5% 20% 20% 20% 15% 10%;
+}
+
+.row-item.object {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 10px;
+}
+
+.row-item.array {
+    border-bottom: 2px solid cornflowerblue;
+    border-right: 2px solid cornflowerblue;
+    border-left: 2px solid cornflowerblue;
+    border-radius: 10px;
+}
+
+.JSON-view {
+    width: 50%;
+}

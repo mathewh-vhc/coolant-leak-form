@@ -1,0 +1,88 @@
+/*Basic styling for app cards*/
+.card {
+    background-color: white;
+    max-width: 60vw;
+    min-height: 60vh;
+    filter: var(--drop-shadow);
+    border-radius: 10px;
+}
+
+.card.dialogue.float {
+    position: absolute;
+}
+
+.card-menubar {
+    height: 40px;
+    background-color: var(--titlebar-bg);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-title {
+    color: var(--card-base-light);
+    position: absolute;
+    left: 10px;
+    top:10px;
+    font-weight: 600;
+}
+
+.close-button {
+    position: absolute;
+    line-height: 5px;
+    padding: 17.5px;
+    right: 0px;
+    border-top-right-radius: 10px;
+    background-color:rgb(4, 28, 49);
+    color: var(--card-base-light);
+    font-weight: 500;
+}
+
+.close-button:hover {
+    background-color: rgb(238, 49, 49);
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.minimize-button {
+    position: absolute;
+    line-height: 5px;
+    padding: 17.5px;
+    right: 0px;
+    background-color:rgb(20, 80, 133);
+    color: var(--card-base-light);
+    font-weight: 500;
+}
+
+.minimize-button:hover {
+    background-color: rgb(17, 68, 112);
+    cursor: pointer;
+    font-weight: 550;
+}
+
+/*Class selectors for a minimized card*/
+.card.minimized>.card-content {
+    display: none;
+}
+
+.card.minimized {
+    min-height: 40px !important;
+    max-height: 40px !important;
+    min-width: 200px !important;
+    max-width: 200px !important;
+    position: absolute;
+    bottom: 10px;
+    justify-self: 10px;
+}
+
+.card.minimized>.card-menubar {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card.minimized>.card-menubar>.card-actions>.close-button {
+    border-bottom-right-radius: 10px;
+}

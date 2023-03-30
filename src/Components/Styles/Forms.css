@@ -1,0 +1,13 @@
+/*Styling for basic forms*/
+.form-info-item {
+    display: flex;
+    align-items: start;
+    justify-items:flex-start;
+    justify-content: end;
+    gap: 5px;
+    text-align: left;
+}
+
+.form-info-item>div {
+    width: 100%;
+}

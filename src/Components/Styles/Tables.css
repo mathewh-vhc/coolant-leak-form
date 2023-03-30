@@ -1,0 +1,27 @@
+.card-content.data-table {
+    overflow: scroll;
+    height: 20vh;
+}
+  
+.tablerow {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 10px;
+    height:40px;
+    text-overflow: clip;
+}
+  
+.tablerow.header>div {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+  
+.row-item {
+    overflow: hidden;
+}
+  
+.tablerow>div {
+    margin: 10px;
+}

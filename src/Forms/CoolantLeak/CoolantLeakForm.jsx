@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {Card, FloatContainer, CardContent} from 'vhp-component-library'
+import {Card, FloatContainer, CardContent, Image} from 'vhp-component-library'
 
 import { SetProperty } from '../../bin/vhp-tools';
 import './Styles/CoolantLeakForm.css'
@@ -82,6 +82,10 @@ export class CoolantLeakForm extends Component {
     render() {
         return(
 			<FloatContainer containerClass = "overlay">
+				<div id = "print-title">
+					<Image src = "https://www.vogelheating.com/images/logos/Logo.2205190834550.png" id = "vogel-logo"/>
+					<div id = "print-title-header">Refrigerant Leak Notification</div>
+				</div>
 				<Card
 					titlebar = {true}
 					title = "Refrigerant Leak Notification Form"

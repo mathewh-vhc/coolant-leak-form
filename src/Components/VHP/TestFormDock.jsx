@@ -31,7 +31,23 @@ export class TestFormDock extends Component {
 						<div className='dock-form-card'>
 							<Paragraph 
 								data = {{
-									heading:"",
+									heading:"Rewards Membership Agreement",
+									paragraph:["A form for signing customers up for a rewards membership."]
+								}}
+							/>
+							<div className='action-row dock-form-card-controls'>
+								<TextButton 
+									text = "Open Form"
+								/>
+								<TextButton 
+									text = "Edit Form"
+								/>
+							</div>
+						</div>
+						<div className='dock-form-card'>
+							<Paragraph 
+								data = {{
+									heading:"Spiral Duct Order Form",
 									paragraph:["A form for inputting spiral duct orders."]
 								}}
 							/>

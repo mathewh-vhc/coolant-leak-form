@@ -1,3 +1,7 @@
+#print-title {
+	display: none;
+}
+
 #refrig-form {
 	min-width: 97.5vw;
 	max-width: 97.5vw;
@@ -211,6 +215,202 @@
 	#special-considerations {
 		width: 30vw;
 		min-height: 60vh;
+	}
+}
+
+@media print {
+	body {
+		background-color: transparent !important;
+	}
+	@page {
+		margin: 0.25in;
+	}
+	#print-title {
+		display: grid;
+		grid-template-columns: 55% 70%;
+	}
+	#print-title-header {
+		font-size: 2.5rem;
+		border: 2px solid black;
+		line-height: 0.9in;
+	}
+	#vogel-logo {
+		height: 1in;
+	}
+	.card-content {
+		padding: 0px !important;
+		margin: 0px !important;
+	}
+	* { overflow: visible !important; } 
+	.float-container.overlay {
+		position: absolute;
+		align-content: start;
+		justify-content: start;
+		background-color: transparent;
+		left: 0px;
+		top:0px;
+		right: 0px;
+		padding: 0px !important;
+		margin: 0px !important;
+		width: 0px !important;
+		height: 0px !important;
+	}
+	#refrig-form {
+		overflow: auto;
+		background-color: transparent;
+		filter: none;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+	#refrig-form>.card-menubar {
+		display: none;
+	}
+	#refrig-form>.card-content{
+		margin: 0;
+		padding: 0;
+	}
+	.card-content.flex-two-thirds {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+	.card-content.flex-half-n-half {
+		display: flex;
+		flex-direction: column;
+	}
+	#refrig-form-info {
+		min-width: 10in !important;
+		height: fit-content;
+		filter: none;
+		margin: 0;
+		padding: 0;
+	}
+	#form-info-main {
+		width: 10in !important;
+	}
+	#form-info-main>.paragraph-cont,
+	#form-info-main>.paragraph-cont>.numbered-list>.list-item {
+		width: 10in !important;
+	}
+	#refrig-form-info>.card-menubar {
+		display: none;
+	}
+	#refrig-form-actions {
+		min-width: 10in;
+		height: fit-content;
+		filter: none;
+	}
+	#refrig-form-actions>.card-menubar {
+		display: none;
+	}
+
+	#wide-paragraph {
+		font-size: 1.25rem;
+	}
+	.paragraph-cont {
+		font-size: 1.25rem;
+		padding: 0.04in;
+	}
+	#side-card-paragraph,
+	#side-card-paragraph>.paragraph-body {
+		width: 10in !important;
+		height: min-content;
+		overflow: auto;
+		color: #000000;
+		margin: 0;
+		padding: 0;
+	}
+	#special-considerations,
+	#special-considerations-card-content,
+	#special-considerations-card-content>.card-content {
+		width: 10in !important;
+		max-height: min-content !important;
+		min-height: min-content !important;
+		margin: 0;
+		padding: 0;
+		border: 0px;
+		font-size: 1.25rem !important;
+	}
+	#side-card-paragraph {
+		font-size: 1.25rem !important;
+	}
+	.form-info-item.choices-checkbox {
+		height: min-content;
+		padding: 0;
+		margin: 0;
+	}
+	.header.notif-card-header {
+		display: none;
+	}
+	.action-button {
+		display: none;
+	}
+	.checkbox-cont {
+		border: 0px !important;
+		border-radius: 0px !important;
+		border-bottom: 2px solid black !important;
+	}
+	.checkbox-check {
+		background-color: transparent !important;
+		filter: none !important;
+		border: 0px !important;
+		border-radius: 0px !important;
+	}
+	.form-info-title {
+		font-size: 1.25rem !important;
+	}
+	#refrig-form-actions {
+		width: 12in !important;
+	}
+	/*Customer inputs*/
+	#refrig-form-actions-card-content {
+		padding: 0;
+		margin: 0;
+	}
+	#refrig-form-actions-card-content>.card-content {
+		padding: 0px;
+		margin: 0px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+	#refrig-form-actions-card-content>:nth-child(2) {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+	#refrig-form-actions-card-content>.card-content>.form-info-item {
+		display: grid;
+		grid-template-columns: 30% 60%;
+		align-items: center;
+		justify-content: center;
+		height: 0.5in;
+	}
+	#refrig-form-actions-card-content>:nth-child(2)>.form-info-item {
+		grid-template-columns: 15.5% 79.5%;
+	}
+	#refrig-form-actions-card-content>.card-content>.form-info-item>input {
+		height: 100% !important;
+		border-radius: 0px;
+		border: 0px;
+		border-bottom: 2px solid black;
+	}
+	#refrig-form-actions-card-content>.card-content>.form-info-item>.form-info-title {
+		font-size: 0.15in;
+	}
+	.signature-cont {
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center;
+		justify-content: center
+	}
+	#acknowledgement-text {
+		margin-left: 0.5in;
+	}
+	#r-22-check {
+		display: grid;
+		grid-template-columns: 35% 62.5% !important;
 	}
 }
 

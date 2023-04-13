@@ -218,6 +218,54 @@
 	}
 }
 
+/*Phone Portrait*/
+@media screen and (max-width: 600px) {
+	#side-card-paragraph {
+		width: 100%;
+	}
+	#form-info-main {
+		width: 90vw !important;
+	}
+	.paragraph-cont {
+		width: 100%;
+	}
+	#special-considerations {
+		min-height: fit-content;
+		min-width: 90vw !important;
+		max-width: 90vw !important;
+	}
+	#refrig-form {
+		width: 100vw;
+	}
+	.card-content.flex-half-n-half {
+		display: unset !important;
+	}
+	.card-content.flex-two-thirds {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+	#sig-box {
+		width: 370px;
+	}
+	#clear-canvas {
+		width: 165px;
+		
+	}
+	#submit-form {
+		left: 50%;
+	}
+	.card-menubar {
+		display: none;
+	}
+	.card.form-card {
+		padding: 0 !important;
+		margin: 0 !important;
+		filter: unset !important;
+	}
+}
+
 @media print {
 	body {
 		background-color: transparent !important;

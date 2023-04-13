@@ -13,7 +13,7 @@ var configdefault = {
 		active:false
 	},
 	user:{
-		active:true
+		active:false
 	},
 	dock:{
 		active:false

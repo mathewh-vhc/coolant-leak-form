@@ -13,7 +13,7 @@
     "react-scripts": "5.0.1",
     "react-to-print": "^2.14.12",
     "stream-http": "^3.2.0",
-    "vhp-api": "^0.1.193",
+    "vhp-api": "^0.1.19",
     "vhp-component-library": "^1.0.50",
     "vhp-forms-library": "^1.0.1",
     "web-vitals": "^2.1.4"

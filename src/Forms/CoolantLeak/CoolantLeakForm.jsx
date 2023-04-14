@@ -6,6 +6,7 @@ import { SetProperty } from '../../bin/vhp-tools';
 import './Styles/CoolantLeakForm.css'
 import { AcknowledgementForm } from './Containers/AcknowledgementForm';
 import { AuthorizationForm } from './Containers/AuthorizationForm';
+import { Core } from 'vhp-api';
 
 export class CoolantLeakForm extends Component {
     constructor(props) {
@@ -24,7 +25,8 @@ export class CoolantLeakForm extends Component {
 			address:this.props.address||"",
 			city:this.props.city||"",
 			zip:this.props.zip||"",
-			date:""
+			date:"",
+			api:undefined
 		}
 
 		this.SetProperty = SetProperty.bind(this)
@@ -37,6 +39,20 @@ export class CoolantLeakForm extends Component {
 
 		this.SubmitForm = this.SubmitForm.bind(this)
     }
+
+	componentDidMount() {
+		console.log("MOUNTED")
+		if (this.props.dev == false) {
+			this.setState({
+				api:new Core({host:"http://192.168.0.58:5000/", auth:{user:"VOGCH", pswrd:"vogel123"}, sync:false, dev:{comments:true}})
+			},()=>{
+				console.log("ping")
+				this.state.api.Ping().then(ping=>{
+					console.log(ping, "from ping")
+				})
+			})
+		}
+	}
 
 	componentDidUpdate(prevProps, prevState) {
 		if (prevState.currentKey != this.state.currentKey) {
@@ -77,7 +93,11 @@ export class CoolantLeakForm extends Component {
 		}
 
 		//Save to API
+		//call this.state.api here
 	}
+
+	/*
+	*/
 
     render() {
         return(

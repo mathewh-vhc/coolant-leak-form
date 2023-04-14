@@ -26,9 +26,7 @@ var configdefault = {
 function App() {
   	return (
 		<div className = "App">
-	  		<AppBox config={configdefault}>
-				<CoolantLeakForm />
-			</AppBox>
+	  		<CoolantLeakForm dev = {false}/>
 		</div>
   	);
 }
